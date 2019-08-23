@@ -12,6 +12,6 @@ All usage under the license and the extended rights described above are subject 
    * to correlate ride data with profile data, or
    * to engage in other activities that might deanonymize cyclists or otherwise infringe our app users' privacy rights.
 
-Should you discover any such information accidentally, you are required to delete that information immediately and to not make further use of the information. You are also required to assert that such information cannot be accessed by third parties before you delete it.
+  Should you discover any such information accidentally, you are required to delete that information immediately and to not make further use of the information. You are also required to assert that such information cannot be accessed by third parties before you delete it.
 
 3. When you make this data set publicly accessible (either in original or adapted form) you must assert that your data copy also complies with these terms of use. For this, you can either use comparable terms of use or take technical measures such as data aggregation to assert the same outcome.
