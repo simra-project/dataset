@@ -85,7 +85,7 @@ gender:
               1 = Male, 2 = Female, 3 = Other
 region:
               0 = Please Choose (default value)
-              1 = Berlin, 2 = London, 3 = Other, 4 = Bern
+              1 = Berlin, 2 = London, 3 = Other, 4 = Bern, 5 = Pforzheim/Enzkreis
 experience: experience as a cyclist (in year groups):
               0 = Please Choose (default value)
               1 = More then 10 years
