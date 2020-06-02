@@ -134,10 +134,11 @@ experience: experience as a cyclist (in year groups):
               3 = 2 to 4 years  
               4 = Less then 2 years  
 numberOfRides: Number of rides a user has uploaded  
-duration: The duration of rides a user has uploaded  
+duration: The duration of rides a user has uploaded (unit: milliseconds)  
 numberOfIncidents: The number of incidents a user has uploaded  
-waitedTime: The duration a user had to wait during his uploaded rides  
-distance: The distance of rides a user has uploaded  
-co2: The co2 savings of rides a user has uploaded by not driving a car  
+waitedTime: The duration a user had to wait during his uploaded rides (unit: seconds)  
+distance: The distance of rides a user has uploaded (unit: meters)  
+co2: The co2 savings of rides a user has uploaded by not driving a car (unit: g)  
 0,1,...,23: The distribution of rides through the hours in a day. If a ride is from 2:34pm to 3:10pm, the values at 2 and 3 will be increased by 0.5  
-behaviour:  
+behaviour: How much the user follows the traffic rules. 0 - 5, where 0 is "never" and 5 is "always"
+numberOfScary: The number of uploaded incidents that were labeled as scary by the user
