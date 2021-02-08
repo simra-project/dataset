@@ -11,6 +11,9 @@ This project is part of the SimRa research project which includes the following 
 In this project, we collect – with a strong focus on data protection and privacy – data on such near crashes to identify when and where bicyclists are especially at risk. We also aim to identify the main routes of bicycle traffic in Berlin. To obtain such data, we have developed a smartphone app that uses GPS information to track routes of bicyclists and the built-in acceleration sensors to pre-categorize near crashes. After their trip, users are asked to annotate and upload the collected data, pseudonymized per trip.
 For more information see [our website](https://www.digital-future.berlin/en/research/projects/simra/).
 
+The data from 06/2019 - 12/2020 can be found at https://depositonce.tu-berlin.de/handle/11303/11713  
+Newer data is published in this repository.  
+
 # License
 The data collected in the SimRa project and published in this repository is made available under CC BY-NC 4.0 license ([further information](https://creativecommons.org/licenses/by-nc/4.0/)).
 While the license denies commercial use, we grant the following additional rights for commercial use:
@@ -60,7 +63,7 @@ pLoc: Location of the phone during the ride:
               4 = Basket/Pannier  
               5 = Backpack/Bag  
               6 = Other 
-incident: Type of incident:
+incident: Type of incident:  
               0 = Nothing (default value)  
               1 = Close Pass  
               2 = Someone pulling in or out  
@@ -92,6 +95,7 @@ X/Y/Z: accelerometer sensor readings. Further information: https://developer.and
 ts: timestamp (number of milliseconds from epoch)  
 acc: the radius of 68% confidence, meaning that there is a 68% chance that the true location is within that radius of the measured point (lat, lon) in meters  
 a/b/c: gyroscope sensor readings. Further information: https://developer.android.com/guide/topics/sensors/sensors_motion.html#sensors-motion-gyro  
+obsDistanceLeft1/obsDistanceLeft2/obsDistanceRight1/obsDistanceRight2: OpenBikeSensor readings on the left and ride sides in meter.  
 
 Profile: Contains demographical data of the user.  
 Header: birth,gender,region,experience,numberOfRides,duration,numberOfIncidents,waitedTime,distance,co2,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,behaviour,numberOfScary  
@@ -116,7 +120,7 @@ gender:
               1 = Male, 2 = Female, 3 = Other  
 region:  
               0 = Please Choose (default value)  
-              1 = Berlin  
+              1 = Berlin/Potsdam  
               2 = London  
               3 = Other  
               4 = Bern  
@@ -127,6 +131,13 @@ region:
               9 = Leipzig  
               10 = Wuppertal/Solingen/Remscheid  
               11 = Düsseldorf  
+	      12 = Eichwalde/Zeuthen/Schulzendorf  
+	      13 = Hannover
+	      14 = Bielefeld
+	      15 = Munich
+	      16 = ZES Experimental
+	      17 = Konstanz  
+	      18 = Weimar
 experience: experience as a cyclist (in year groups):  
               0 = Please Choose (default value)  
               1 = More then 10 years  
