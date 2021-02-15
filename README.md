@@ -1,3 +1,6 @@
+# Important!
+due to GitHub storage constraints, we upload the majority of the data to [DepositOnce](https://depositonce.tu-berlin.de/handle/11303/11713) and keep the more recent ride and profile data here on GitHub.
+
 # SimRa Dataset
 
 This project is part of the SimRa research project which includes the following subprojects:
