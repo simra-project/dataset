@@ -93,13 +93,16 @@ desc: text description of the incident.
 
 ========================= (divides incident information and ride information)  
 
-Header: lat,lon,X,Y,Z,timeStamp,acc,a,b,c  
+Header: lat,lon,X,Y,Z,timeStamp,acc,a,b,c,obsDistanceLeft1,obsDistanceLeft2,obsDistanceRight1,obsDistanceRight2,obsClosePassEvent,XL,YL,ZL,RX,RY,RZ,RC  
 lat/lon: latitude and longitude (GPS location) 
 X/Y/Z: accelerometer sensor readings. Further information: https://developer.android.com/guide/topics/sensors/sensors_motion.html#sensors-raw-data  
 ts: timestamp (number of milliseconds from epoch)  
 acc: the radius of 68% confidence, meaning that there is a 68% chance that the true location is within that radius of the measured point (lat, lon) in meters  
 a/b/c: gyroscope sensor readings. Further information: https://developer.android.com/guide/topics/sensors/sensors_motion.html#sensors-motion-gyro  
-obsDistanceLeft1/obsDistanceLeft2/obsDistanceRight1/obsDistanceRight2: OpenBikeSensor readings on the left and ride sides in meter.  
+obsDistanceLeft1/obsDistanceLeft2/obsDistanceRight1/obsDistanceRight2: OpenBikeSensor readings on the left and ride sides in meter  
+obsClosePassEvent: Whether an obsClosePassEvent occured here  
+XL/YL/ZL: linear accelerometer values (X/Y/Z without gravity) Further information: https://developer.android.com/reference/android/hardware/SensorEvent#sensor.type_linear_acceleration  
+RX/RY/RZ/RC: rotation vector values. Further information: https://developer.android.com/reference/android/hardware/SensorEvent#sensor.type_rotation_vector  
 
 Profile: Contains demographical data of the user.  
 Header: birth,gender,region,experience,numberOfRides,duration,numberOfIncidents,waitedTime,distance,co2,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,behaviour,numberOfScary  
