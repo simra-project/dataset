@@ -65,8 +65,9 @@ pLoc: Location of the phone during the ride:
               3 = Hand  
               4 = Basket/Pannier  
               5 = Backpack/Bag  
-              6 = Other 
-incident: Type of incident:  
+              6 = Other  
+incident:  Type of incident:  
+             -5 = Dummy incident (if no incident is set, this is created to preserve bike, pLoc, childCheckBox and trailerCheckBox info)  
               0 = Nothing (default value)  
               1 = Close Pass  
               2 = Someone pulling in or out  
