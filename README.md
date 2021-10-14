@@ -1,5 +1,8 @@
 # Important!
-due to GitHub storage constraints, we upload the majority of the data to [DepositOnce](https://depositonce.tu-berlin.de/handle/11303/11713) and keep the more recent ride and profile data here on GitHub.
+due to GitHub storage constraints, we upload the majority of the data to DepositOnce and keep the more recent ride and profile data here on GitHub.
+
+[DepositOnce (06/2019-12/2020)](https://doi.org/10.14279/depositonce-10605)  
+[DepositOnce (01/2021-09/2021)](https://doi.org/10.14279/depositonce-10605)  
 
 # SimRa Dataset
 
@@ -14,7 +17,8 @@ This project is part of the SimRa research project which includes the following 
 In this project, we collect – with a strong focus on data protection and privacy – data on such near crashes to identify when and where bicyclists are especially at risk. We also aim to identify the main routes of bicycle traffic in Berlin. To obtain such data, we have developed a smartphone app that uses GPS information to track routes of bicyclists and the built-in acceleration sensors to pre-categorize near crashes. After their trip, users are asked to annotate and upload the collected data, pseudonymized per trip.
 For more information see [our website](https://www.digital-future.berlin/en/research/projects/simra/).
 
-The data from 06/2019 - 12/2020 can be found at https://depositonce.tu-berlin.de/handle/11303/11713  
+The data from 06/2019 - 12/2020 can be found at https://doi.org/10.14279/depositonce-10605  
+The data from 01/2021 - 09/2021 can be found at https://doi.org/10.14279/depositonce-10605  
 Newer data is published in this repository.  
 
 # License
