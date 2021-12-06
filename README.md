@@ -2,7 +2,7 @@
 due to GitHub storage constraints, we upload the majority of the data to DepositOnce and keep the more recent ride and profile data here on GitHub.
 
 [DepositOnce (06/2019-12/2020)](https://doi.org/10.14279/depositonce-10605)  
-[DepositOnce (01/2021-09/2021)](https://doi.org/10.14279/depositonce-12451)  
+[DepositOnce (01/2021-09/2021)](https://doi.org/10.14279/depositonce-12452)  
 
 # SimRa Dataset
 
