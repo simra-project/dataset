@@ -61,7 +61,8 @@ bike: type of bicycle:
               8 = Other  
 
 childCheckBox: 0, if no child is being transported on the bike, 1 otherwise.  
-trailerCheckBox: 0, if no child is attached at the bike,1 otherwise.  
+trailerCheckBox: 0, if no child is attached at the bike,1 otherwise.
+
 pLoc: Location of the phone during the ride:  
               0 = Pocket (default value)  
               1 = Handlebar  
@@ -80,7 +81,8 @@ incident:  Type of incident:
               5 = Tailgating  
               6 = Near-Dooring  
               7 = Dodging an obstacle (e.g., a dog)  
-              8 = Other (Please specify below)  
+              8 = Other (Please specify below)
+	      
 i1-i10 are other participants involved in the incident. 1, if the according type of participant was involved, 0 otherwise.  
               i1 = Bus/Coach  
               i2 = Cyclist  
@@ -91,7 +93,8 @@ i1-i10 are other participants involved in the incident. 1, if the according type
               i7 = Car  
               i8 = Taxi/Cab  
               i9 = Other  
-	      i10 = Electric Scooter  
+	      i10 = Electric Scooter
+	      
 scary: 1, if the incident was scary, 0 otherwise  
 desc: text description of the incident.  
 
