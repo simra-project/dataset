@@ -1,3 +1,9 @@
+# Important!
+due to GitHub storage constraints, we upload the majority of the data to DepositOnce and keep the more recent ride and profile data here on GitHub.
+
+[DepositOnce (06/2019-12/2020)](https://doi.org/10.14279/depositonce-10605)  
+[DepositOnce (01/2021-09/2021)](https://doi.org/10.14279/depositonce-12452)  
+
 # SimRa Dataset
 
 This project is part of the SimRa research project which includes the following subprojects:
@@ -10,6 +16,10 @@ This project is part of the SimRa research project which includes the following 
 
 In this project, we collect – with a strong focus on data protection and privacy – data on such near crashes to identify when and where bicyclists are especially at risk. We also aim to identify the main routes of bicycle traffic in Berlin. To obtain such data, we have developed a smartphone app that uses GPS information to track routes of bicyclists and the built-in acceleration sensors to pre-categorize near crashes. After their trip, users are asked to annotate and upload the collected data, pseudonymized per trip.
 For more information see [our website](https://www.digital-future.berlin/en/research/projects/simra/).
+
+The data from 06/2019 - 12/2020 can be found at https://doi.org/10.14279/depositonce-10605  
+The data from 01/2021 - 09/2021 can be found at https://doi.org/10.14279/depositonce-10605  
+Newer data is published in this repository.  
 
 # License
 The data collected in the SimRa project and published in this repository is made available under CC BY-NC 4.0 license ([further information](https://creativecommons.org/licenses/by-nc/4.0/)).
@@ -60,9 +70,9 @@ pLoc: Location of the phone during the ride:
               3 = Hand  
               4 = Basket/Pannier  
               5 = Backpack/Bag  
-              6 = Other
-	      
-incident: Type of incident:
+              6 = Other  
+incident:  Type of incident:  
+             -5 = Dummy incident (if no incident is set, this is created to preserve bike, pLoc, childCheckBox and trailerCheckBox info)  
               0 = Nothing (default value)  
               1 = Close Pass  
               2 = Someone pulling in or out  
@@ -90,12 +100,16 @@ desc: text description of the incident.
 
 ========================= (divides incident information and ride information)  
 
-Header: lat,lon,X,Y,Z,timeStamp,acc,a,b,c  
+Header: lat,lon,X,Y,Z,timeStamp,acc,a,b,c,obsDistanceLeft1,obsDistanceLeft2,obsDistanceRight1,obsDistanceRight2,obsClosePassEvent,XL,YL,ZL,RX,RY,RZ,RC  
 lat/lon: latitude and longitude (GPS location) 
 X/Y/Z: accelerometer sensor readings. Further information: https://developer.android.com/guide/topics/sensors/sensors_motion.html#sensors-raw-data  
 ts: timestamp (number of milliseconds from epoch)  
 acc: the radius of 68% confidence, meaning that there is a 68% chance that the true location is within that radius of the measured point (lat, lon) in meters  
 a/b/c: gyroscope sensor readings. Further information: https://developer.android.com/guide/topics/sensors/sensors_motion.html#sensors-motion-gyro  
+obsDistanceLeft1/obsDistanceLeft2/obsDistanceRight1/obsDistanceRight2: OpenBikeSensor readings on the left and ride sides in meter  
+obsClosePassEvent: Whether an obsClosePassEvent occured here  
+XL/YL/ZL: linear accelerometer values (X/Y/Z without gravity) Further information: https://developer.android.com/reference/android/hardware/SensorEvent#sensor.type_linear_acceleration  
+RX/RY/RZ/RC: rotation vector values. Further information: https://developer.android.com/reference/android/hardware/SensorEvent#sensor.type_rotation_vector  
 
 Profile: Contains demographical data of the user.  
 Header: birth,gender,region,experience,numberOfRides,duration,numberOfIncidents,waitedTime,distance,co2,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,behaviour,numberOfScary  
@@ -120,7 +134,7 @@ gender:
               1 = Male, 2 = Female, 3 = Other  
 region:  
               0 = Please Choose (default value)  
-              1 = Berlin  
+              1 = Berlin/Potsdam  
               2 = London  
               3 = Other  
               4 = Bern  
@@ -131,17 +145,25 @@ region:
               9 = Leipzig  
               10 = Wuppertal/Solingen/Remscheid  
               11 = Düsseldorf  
+	      12 = Eichwalde/Zeuthen/Schulzendorf  
+	      13 = Hannover
+	      14 = Bielefeld
+	      15 = Munich
+	      16 = ZES Experimental
+	      17 = Konstanz  
+	      18 = Weimar
 experience: experience as a cyclist (in year groups):  
               0 = Please Choose (default value)  
-              1 = More then 10 years  
+              1 = More than 10 years  
               2 = 5 to 10 years  
               3 = 2 to 4 years  
-              4 = Less then 2 years  
+              4 = Less than 2 years  
 numberOfRides: Number of rides a user has uploaded  
-duration: The duration of rides a user has uploaded  
+duration: The duration of rides a user has uploaded (unit: milliseconds)  
 numberOfIncidents: The number of incidents a user has uploaded  
-waitedTime: The duration a user had to wait during his uploaded rides  
-distance: The distance of rides a user has uploaded  
-co2: The co2 savings of rides a user has uploaded by not driving a car  
+waitedTime: The duration a user had to wait during his uploaded rides (unit: seconds)  
+distance: The distance of rides a user has uploaded (unit: meters)  
+co2: The co2 savings of rides a user has uploaded by not driving a car (unit: g)  
 0,1,...,23: The distribution of rides through the hours in a day. If a ride is from 2:34pm to 3:10pm, the values at 2 and 3 will be increased by 0.5  
-behaviour:  
+behaviour: How much the user follows the traffic rules. 0 - 5, where 0 is "never" and 5 is "always"  
+numberOfScary: The number of uploaded incidents that were labeled as scary by the user
