@@ -151,10 +151,10 @@ region:
 	      18 = Weimar
 experience: experience as a cyclist (in year groups):  
               0 = Please Choose (default value)  
-              1 = More then 10 years  
+              1 = More than 10 years  
               2 = 5 to 10 years  
               3 = 2 to 4 years  
-              4 = Less then 2 years  
+              4 = Less than 2 years  
 numberOfRides: Number of rides a user has uploaded  
 duration: The duration of rides a user has uploaded (unit: milliseconds)  
 numberOfIncidents: The number of incidents a user has uploaded  
