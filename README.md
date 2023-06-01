@@ -114,7 +114,11 @@ XL/YL/ZL: linear accelerometer values (X/Y/Z without gravity) Further informatio
 RX/RY/RZ/RC: rotation vector values. Further information: https://developer.android.com/reference/android/hardware/SensorEvent#sensor.type_rotation_vector  
 
 Profile: Contains demographical data of the user.  
-Header: birth,gender,region,experience,numberOfRides,duration,numberOfIncidents,waitedTime,distance,co2,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,behaviour,numberOfScary  
+The header changed throughout the versions and can differ between iOS and Android Versions.
+The following map shows which column names can appear at which index like this: <index>=[column_name1, column_name2]:
+	
+0=[birth], 1=[gender], 2=[region], 3=[experience], 4=[numberOfRides], 5=[duration], 6=[numberOfIncidents], 7=[waitedTime, length], 8=[distance, idle], 9=[0, numberOfScary, co2, behaviour], 10=[0, 1, numberOfScary], 11=[0, 1, 2], 12=[1, 2, 3], 13=[2, 3, 4], 14=[3, 4, 5], 15=[4, 5, 6], 16=[5, 6, 7], 17=[6, 7, 8], 18=[7, 8, 9], 19=[8, 9, 10], 20=[11, 9, 10], 21=[11, 12, 10], 22=[11, 12, 13], 23=[12, 13, 14], 24=[13, 14, 15], 25=[14, 15, 16], 26=[15, 16, 17], 27=[16, 17, 18], 28=[17, 18, 19], 29=[18, 19, 20], 30=[19, 20, 21], 31=[22, 20, 21], 32=[22, 23, 21], 33=[22, 23], 34=[23, behaviour], 35=[numberOfScary]
+Example Header: birth,gender,region,experience,numberOfRides,duration,numberOfIncidents,waitedTime,distance,co2,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,behaviour,numberOfScary  
 
 birth: birth year group  
               0 = Please Choose  
