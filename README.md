@@ -64,7 +64,7 @@ bike: type of bicycle:
               8 = Other  
 
 childCheckBox: 0, if no child is being transported on the bike, 1 otherwise.  
-trailerCheckBox: 0, if no child is attached at the bike,1 otherwise.
+trailerCheckBox: 0, if no trailer is attached at the bike,1 otherwise.
 
 pLoc: Location of the phone during the ride:  
               0 = Pocket (default value)  
