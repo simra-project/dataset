@@ -5,6 +5,9 @@ due to GitHub storage constraints, we upload the majority of the data to Deposit
 [DepositOnce (01/2021-09/2021)](https://doi.org/10.14279/depositonce-12452)  
 [DepositOnce (10/2021-09/2022)](https://doi.org/10.14279/depositonce-16439)  
 [DepositOnce (10/2022-07/2023)](https://doi.org/10.14279/depositonce-18591)  
+[DepositOnce (10/2022-07/2023)](https://doi.org/10.14279/depositonce-18591)  
+[DepositOnce (08/2023-03/2024)](https://doi.org/10.14279/depositonce-20446)  
+[DepositOnce (04/2024-01/2025)](https://doi.org/10.14279/depositonce-22968)  
 
 # SimRa Dataset
 
