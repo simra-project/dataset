@@ -26,7 +26,10 @@ pLoc: Location of the phone during the ride:
 3 = Hand
 4 = Basket/Pannier
 5 = Backpack/Bag
-6 = Other incident: Type of incident: 0 = Nothing (default value)
+6 = Other 
+incident: 
+Type of incident: 
+0 = Nothing (default value)
 1 = Close Pass
 2 = Someone pulling in or out
 3 = Near left or right hook
